@@ -29,7 +29,9 @@ public class Etudiant {
      * @param nom
      */
     public void setNom(String nom){
-        this.nom = nom;
+        if(nom != null){
+            this.nom = nom;
+        }
     }
 
     
