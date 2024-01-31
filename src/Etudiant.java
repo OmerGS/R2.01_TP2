@@ -1,3 +1,6 @@
+/*
+* @author O.Gunes
+*/
 public class Etudiant {
     private String nom;
     private double[][] bulletin;
@@ -21,14 +24,26 @@ public class Etudiant {
         }
     }
 
+    
+    /** 
+     * @param nom
+     */
     public void setNom(String nom){
         this.nom = nom;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getNom(){
         return this.nom;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getNbMatiere(){
         int nbMatiere = 0;
 
@@ -37,6 +52,12 @@ public class Etudiant {
         return(nbMatiere);
     }
 
+    
+    /** 
+    * @param indiceMatiere
+    * @param indiceNote
+    * @return double
+    */
     public double getUneNote(int indiceMatiere, int indiceNote){
         double noteToReturn = 0;
 
@@ -51,6 +72,10 @@ public class Etudiant {
         return(noteToReturn);
     }
     
+    
+    /** 
+     * @return String
+     */
     public String meilleurNote() {
         double meilleureNote = 0;  
         String matiereMeilleureNote = "";
